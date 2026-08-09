@@ -1,31 +1,60 @@
 # Test Execution Report
 
 ## Project
-Swag Labs – Manual Testing
+
+Swag Labs – Web Application Manual Testing
+
+## Testing Type
+
+Functional Testing
 
 ## Test Environment
+
 - Application: Swag Labs
 - Testing Type: Manual Functional Testing
 - Browser: Google Chrome
-- Test Date: August 2026
+- Test Execution: Manual
+
+## Test Execution Summary
+
+| Test Case ID | Module | Test Scenario | Expected Result | Actual Result | Status |
+|---|---|---|---|---|---|
+| TC-001 | Login | Login with valid credentials | User should be logged in successfully | User was successfully logged in and redirected to the inventory/product page. | PASS |
+| TC-002 | Login | Login with invalid password | Appropriate error message should be displayed | Error message "Epic sadface: Username and password do not match any user in this service" was displayed and login was prevented. | PASS |
+| TC-003 | Login | Login with empty username | Username validation message should be displayed | Error message "Epic sadface: Username is required" was displayed and login was prevented. | PASS |
+| TC-004 | Login | Login with empty password | Password validation message should be displayed | Error message "Epic sadface: Password is required" was displayed and login was prevented. | PASS |
+| TC-005 | Login | Login with both fields empty | Appropriate validation message should be displayed | Error message "Epic sadface: Username is required" was displayed and login was prevented. | PASS |
+| TC-006 | Products | Verify products page loads correctly | Products page should display product names, prices, and Add to cart buttons | Products page loaded successfully with product names, prices, and Add to cart buttons visible. | PASS |
+| TC-007 | Products | Verify product sorting by Name (Z to A) | Products should be displayed in descending alphabetical order | Products were successfully reordered in descending alphabetical order. | PASS |
+| TC-008 | Cart | Add a product to the cart | Product should be added to the cart and cart count should increase to 1 | Sauce Labs Backpack was successfully added to the cart and the cart count displayed 1. | PASS |
+| TC-009 | Cart | Verify added product appears in cart | Added product should be displayed with correct quantity, price, and Remove option | Sauce Labs Backpack was displayed in the cart with quantity 1, price $29.99, and a Remove button. | PASS |
+| TC-010 | Cart | Remove product from cart | Product should be removed and cart count should be cleared | Sauce Labs Backpack was successfully removed from the cart and the cart count disappeared. | PASS |
+| TC-011 | Checkout | Checkout with valid customer information | User should be taken to the Checkout: Overview page | Valid customer information was accepted and the user was successfully redirected to the Checkout: Overview page. | PASS |
+| TC-012 | Checkout | Checkout with missing First Name | A validation message should indicate that First Name is required | Error message "First Name is required" was displayed and the user could not continue. | PASS |
+| TC-013 | Checkout | Checkout with missing Postal Code | A validation message should indicate that Postal Code is required | Error message "Postal Code is required" was displayed and the user could not continue. | PASS |
+| TC-014 | Checkout | Verify checkout order summary | Order summary should display the correct product, quantity, price, item total, tax, and final total | Sauce Labs Backpack was displayed with quantity 1 and price $29.99. Item total was $29.99, tax was $2.40, and final total was $32.39. Payment and shipping information were also displayed. | PASS |
+| TC-015 | Checkout | Complete an order successfully | Order should be completed and a confirmation message should be displayed | Checkout was successfully completed. The "Checkout: Complete!" page and "Thank you for your order!" confirmation message were displayed. | PASS |
 
 ## Execution Summary
 
-| Test Case ID | Test Scenario | Expected Result | Actual Result | Status |
-|---|---|---|---|---|
-| TC-001 | Login with valid credentials | User should be logged in successfully | User was logged in successfully | PASS |
-| TC-002 | Login with invalid credentials | Appropriate error message should be displayed | "Epic sadface: Username and password do not match any user in this service" was displayed | PASS |
-| TC-003 | Login with blank username | Username validation message should be displayed | "Epic sadface: Username is required" was displayed | PASS |
-| TC-004 | Login with blank password | Password validation message should be displayed | "Epic sadface: Password is required" was displayed | PASS |
-| TC-005 | Add product to cart | Product should be added and cart count should update | Product was added, button changed to "Remove", and cart count changed to 1 | PASS |
-| TC-006 | Checkout with missing first name | First Name validation message should be displayed | "Error: First Name is required" was displayed | PASS |
-| TC-007 | Checkout with missing postal code | Postal Code validation message should be displayed | "Error: Postal Code is required" was displayed | PASS |
-| TC-008 | Complete checkout with valid information | Order should be completed successfully | "Checkout: Complete!" page was displayed | PASS |
+- Total Test Cases: 15
+- Passed: 15
+- Failed: 0
+- Blocked: 0
+
+## Test Coverage
+
+The test execution covered the following modules:
+
+- Login
+- Products
+- Cart
+- Checkout
 
 ## Overall Result
 
-All executed test cases passed successfully.
+All 15 executed test cases passed successfully.
 
 ## Conclusion
 
-The tested Swag Labs functionalities behaved as expected during manual functional testing. The test execution covered authentication, product selection, cart functionality, checkout validation, and successful order completion.
+The tested Swag Labs functionalities behaved as expected during manual functional testing. The execution covered authentication, product page functionality, product sorting, cart operations, checkout validation, order summary verification, and successful order completion.
