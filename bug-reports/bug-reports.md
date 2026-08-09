@@ -51,3 +51,6 @@ Open
 
 ### Evidence
 Screenshot captured during manual testing.
+### Screenshot Evidence
+
+![BUG-001 Screenshot](./BUG-001-incorrect-product-image.jpg)
