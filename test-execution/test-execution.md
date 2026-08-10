@@ -34,14 +34,14 @@ Functional Testing
 | TC-013 | Checkout | Checkout with missing Postal Code | A validation message should indicate that Postal Code is required | Error message "Postal Code is required" was displayed and the user could not continue. | PASS |
 | TC-014 | Checkout | Verify checkout order summary | Order summary should display the correct product, quantity, price, item total, tax, and final total | Sauce Labs Backpack was displayed with quantity 1 and price $29.99. Item total was $29.99, tax was $2.40, and final total was $32.39. Payment and shipping information were also displayed. | PASS |
 | TC-015 | Checkout | Complete an order successfully | Order should be completed and a confirmation message should be displayed | Checkout was successfully completed. The "Checkout: Complete!" page and "Thank you for your order!" confirmation message were displayed. | PASS |
+| TC-016 | Products | Verify product sorting by Price (Low to High) | Products should be displayed in ascending order of price | Products were successfully reordered from lowest to highest price. | PASS |
 
 ## Execution Summary
 
-- Total Test Cases: 15
-- Passed: 15
+- Total Test Cases: 16
+- Passed: 16
 - Failed: 0
 - Blocked: 0
-
 ## Test Coverage
 
 The test execution covered the following modules:
