@@ -46,21 +46,20 @@ The following modules were tested:
 
 ## Test Coverage
 
-A total of **16 manual test cases** were executed.
+A total of **17 manual test cases** were designed and executed.
 
 | Module | Test Cases | Result |
 | ------ | ---------: | ------ |
 | Login | 5 | 5 Passed |
 | Products | 2 | 2 Passed |
 | Cart | 3 | 3 Passed |
-| Checkout | 5 | 5 Passed |
-| Checkout Navigation | 1 | 1 Passed |
-| **Total** | **16** | **16 Passed** |
+| Checkout | 6 | 6 Passed |
+| **Total** | **17** | **17 Passed** |
 
 ### Execution Summary
 
-- **Total Test Cases:** 16
-- **Passed:** 16
+- **Total Test Cases:** 17
+- **Passed:** 17
 - **Failed:** 0
 - **Blocked:** 0
 
@@ -80,6 +79,7 @@ A total of **16 manual test cases** were executed.
 - Tested checkout navigation and cart persistence
 - Identified and documented a UI defect
 - Attached screenshot evidence to the bug report
+- Tested checkout navigation and cart persistence
 
 ---
 
