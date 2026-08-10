@@ -112,3 +112,44 @@ manual-testing-qa-portfolio/
 └── bug-reports/
     ├── bug-reports.md
     └── BUG-001-incorrect-product-image.jpg
+```text
+manual-testing-qa-portfolio/
+│
+├── README.md
+│
+├── test-cases/
+│   └── test-cases.md
+│
+├── test-execution/
+│   └── test-execution.md
+│
+└── bug-reports/
+    ├── bug-reports.md
+    └── BUG-001-incorrect-product-image.jpg
+```
+
+## Tools & Skills
+
+### Testing Skills
+
+- Manual Testing
+- Functional Testing
+- Positive & Negative Testing
+- Test Case Design
+- Test Execution
+- Bug Reporting
+- Defect Documentation
+- Test Documentation
+
+### Tools
+
+- GitHub
+- Markdown
+- Web Browser
+- Swag Labs Test Application
+
+## Project Outcome
+
+The project provided hands-on experience in executing a complete manual testing workflow, from test case design and execution to defect identification, documentation, and evidence collection.
+
+**Test Result: 15/15 test cases passed with 1 UI defect identified and documented.**
