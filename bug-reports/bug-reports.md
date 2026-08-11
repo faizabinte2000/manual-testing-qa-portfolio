@@ -24,6 +24,10 @@ Medium
 ### Priority
 Medium
 
+### Reproducibility
+
+Always
+
 ### Module
 Products / Product Listing
 
@@ -45,6 +49,9 @@ Each product should display an image that corresponds to the respective product.
 
 ### Actual Result
 The same pug image is displayed for multiple products, including the Sauce Labs Backpack, instead of the corresponding product images.
+### Impact
+
+Users may be unable to visually distinguish between different products, which can negatively affect product selection and the overall shopping experience.
 
 ### Status
 Open
